@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\title{Apuntes de Método Simplex}
+\author{Froylan Gonzalez Gomez}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+
+El método simplex es un algoritmo para resolver problemas de
+Programación Lineal. Fue inventado por George Dantzig en 1947.
+
+\section{Ejemplo}
+Ilustraremos la aplicación del método simplex con un ejemplo:
+
+Resuelve el siguiente problema:
+
+\begin{equation}
+  
+  \begin{aligned}
+    \text{Maximizar} \quad & 3x_1+x_2 \\
+    \text{Sujeto a} \quad &
+    
+    \begin{aligned}
+      2x_2+3x_1 & \leq 10 \\
+      5x_1+x_2 & \leq 8 \\
+      x_1,x_2  \geq 0
+
+    \end{aligned}
+  \end{aligned}
+\end{equation}
+
+Agregamos las variables de holgura para pasar el problema a su forma
+simplex
+
+\begin{equation}
+  
+  \begin{aligned}
+    \text{Maximizar} \quad & 3x_1+x_2 \\
+    \text{Sujeto a} \quad &
+    
+    \begin{aligned}
+      2x_1+3x_2+x_3 10 \\
+      5x_1+x_2+x_4 8 \\
+      x_1,x_2  \geq 0
+
+    \end{aligned}
+  \end{aligned}
+\end{equation}
+
+    
+A continuación obtenemos un \emph{tablero simplex} despejando las
+variables de holgura     
+    
+
+
+
+\end{document}
+
